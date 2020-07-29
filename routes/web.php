@@ -12,10 +12,17 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 
+Route::get('/', 'FrontController@index')->name('index');
+Route::get('/about', 'FrontController@about')->name('about');
+Route::get('/services', 'FrontController@services')->name('services');
+Route::get('/products', 'FrontController@products')->name('products');
+Route::get('/contact', 'FrontController@contact')->name('contact');
+Route::get('/product/{slug}', 'FrontController@singleproduct')->name('page.product');
+Route::get('/service/{slug}', 'FrontController@singleservice')->name('page.service');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
