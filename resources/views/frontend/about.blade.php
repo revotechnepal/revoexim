@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="lg-text">About Us</h1>
-                <p class="image-aboutus-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="image-aboutus-para">It is crucial to recongnize, reward, and celebrate accomplishments.</p>
             </div>
         </div>
     </div>

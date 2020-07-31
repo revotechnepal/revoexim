@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="lg-text">Our Product</h1>
-                <p class="image-aboutus-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="image-aboutus-para">Don’t find customers for your products, find products for your customers.</p>
             </div>
         </div>
     </div>

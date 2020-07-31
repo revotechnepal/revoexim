@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="lg-text">Services</h1>
-                <p class="image-aboutus-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="image-aboutus-para">We treat our customers like we would want to be treated</p>
             </div>
         </div>
     </div>

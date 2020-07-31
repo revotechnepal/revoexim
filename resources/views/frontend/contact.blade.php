@@ -5,7 +5,7 @@
         <div class="row">
             <div class="col-md-12">
                 <h1 class="lg-text">Contact Us</h1>
-                <p class="image-aboutus-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <p class="image-aboutus-para">Feel free to contact us for more information.</p>
             </div>
         </div>
     </div>
