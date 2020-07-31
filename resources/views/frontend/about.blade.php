@@ -32,8 +32,7 @@
                 <p class="lead">This is the world's leading portal for<br>easy and quick </p>
             </div>
             <div class="col-md-6">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam.</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla convallis egestas rhoncus. Donec facilisis fermentum sem, ac viverra ante luctus vel. Donec vel mauris quam. Lorem ipsum dolor sit amet. Nulla convallis egestas rhoncus.</p>
+                <p>{{strip_tags($settings->about)}}</p>
             </div>
         </div>
     </div>

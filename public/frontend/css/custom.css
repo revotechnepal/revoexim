@@ -239,10 +239,10 @@ ul.social-icons li a:hover {
 }
 
 .slider-content-style .content a.thm-btn {
-    background: #ffba60;
+    background: #007b5e;
     display: inline-block;
     vertical-align: middle;
-    color: #222222;
+    color: white;
     font-size: 18px;
     letter-spacing: .1em;
     font-family: 'Josefin Sans';
@@ -256,6 +256,7 @@ ul.social-icons li a:hover {
 
 .slider-content-style .content a.thm-btn:hover {
     background: #fff;
+    color:#007b5e;
 }
 
 
@@ -553,7 +554,7 @@ footer h4 {
     margin: 0;
     font-weight: 400;
     padding: 0;
-    color: #363940
+    color: white;
 }
 
 footer a {
@@ -884,12 +885,12 @@ section#what-we-do .section-title {
     text-decoration: none;
 }
 
-#what-we-do .card .card-block a i {
+/* #what-we-do .card .card-block a i {
     display: none;
-}
+} */
 
 #what-we-do .card .card-block a i.custom {
-    font-size: 30px;
+    font-size: 35px;
 }
  #what-we-do .card:hover .card-block a i {
     display: inline-block;

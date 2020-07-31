@@ -4,28 +4,27 @@
         <div id="minimal-bootstrap-carousel" class="carousel slide carousel-fade slider-content-style slider-home-one">
             <!-- Wrapper for slides -->
             <div class="carousel-inner">
-                <div class="carousel-item active slide-1" style="background-image: url(http://lorempixel.com/1920/1000/sports/1/);">
+                <div class="carousel-item active slide-1" style="background-image: url(https://vakilsearch.com/advice/wp-content/uploads/2016/03/shutterstock_46727167.jpg);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="box valign-middle">
                                 <div class="content text-center">
-                                    <h3 data-animation="animated fadeInUp">Law Expertise.</h3>
-                                    <p data-animation="animated fadeInUp">Justice <span class="sep">.</span> Equality <span class="sep">.</span> Trust</p>
-                                    <a data-animation="animated fadeInDown" href="#" class="thm-btn ">Free Consultation</a>
-
+                                    <h3 data-animation="animated fadeInUp">Business Expertise.</h3>
+                                    <p data-animation="animated fadeInUp">Quality <span class="sep">.</span>timely <span class="sep">.</span> Trustworthy</p>
+                                    <a data-animation="animated fadeInDown" href="{{route('services')}}" class="thm-btn ">View Services</a>&nbsp;&nbsp;<a data-animation="animated fadeInDown" href="{{route('contact')}}" class="thm-btn ">Contact Us</a>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <div class="carousel-item slide-2" style="background-image: url(http://lorempixel.com/1920/1000/sports/2/);">
+                <div class="carousel-item slide-2" style="background-image: url(https://www.soarbusinesssolutions.net/wp-content/uploads/2019/04/welcome.jpg);">
                     <div class="carousel-caption">
                         <div class="container">
                             <div class="box valign-middle">
                                 <div class="content text-center">
-                                    <h3 data-animation="animated fadeInUp">Law Expertise.</h3>
-                                    <p data-animation="animated fadeInUp">Justice <span class="sep">.</span> Equality <span class="sep">.</span> Trust</p>
-                                    <a data-animation="animated fadeInDown" href="#" class="thm-btn ">Free Consultation</a>
+                                    <h3 data-animation="animated fadeInUp">Business Expertise.</h3>
+                                    <p data-animation="animated fadeInUp">Quality <span class="sep">.</span>timely <span class="sep">.</span> Trustworthy</p>
+                                    <a data-animation="animated fadeInDown" href="{{route('services')}}" class="thm-btn ">View Services</a>&nbsp;&nbsp;<a data-animation="animated fadeInDown" href="{{route('contact')}}" class="thm-btn ">Contact Us</a>
                                 </div>
                             </div>
                         </div>
@@ -51,8 +50,8 @@
                     <div class="col-md-10 col-lg-8">
                         <div class="header-section">
                             <h2 class="title">About <span>Revo Exim</span></h2>
-                            <p class="description">There are many variations of passages of Lorem Ipsum available but the majority have suffered alteration in some injected humour</p>
-                            <a href="#" class="mt-5 btn btn-success custom-btn">Read More</a>
+                            <p class="description">{{strip_tags(substr($settings->about,0,250))}}</p>
+                            <a href="{{route('about')}}" class="mt-5 btn btn-success custom-btn">Read More</a>
                         </div>
                     </div>
                 </div>
@@ -79,14 +78,16 @@
                                     <h3 class="title">{{$service->title}}</h3>
                                 </div>
                                 <div class="part-2">
-                                    <p class="description">{{strip_tags(substr($service->details,0,150)) }}...</p>
-                                    <a href="#"><i class="fas fa-arrow-circle-right"></i>Read More</a>
+                                    <p class="description">{{strip_tags($service->details) }}...</p>
                                 </div>
                             </div>
                         </div>
                     @endforeach
                     <!-- / End Single Service -->
                 </div>
+
+
+
             </div>
         </section>
         <!-- Services Ends Here -->

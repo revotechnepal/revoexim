@@ -23,6 +23,8 @@ Route::get('/products', 'FrontController@products')->name('products');
 Route::get('/contact', 'FrontController@contact')->name('contact');
 Route::get('/product/{slug}', 'FrontController@singleproduct')->name('page.product');
 Route::get('/service/{slug}', 'FrontController@singleservice')->name('page.service');
+Route::get('/privacypolicies', 'FrontController@privacypolicies')->name('privacypolicies');
+Route::get('/terms', 'FrontController@terms')->name('terms');
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');

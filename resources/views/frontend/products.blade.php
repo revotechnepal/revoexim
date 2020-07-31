@@ -24,7 +24,7 @@
         </div>
     </div>
 </div>
-<div class="aboutus-secktion py-5">
+{{-- <div class="aboutus-secktion py-5">
     <div class="container">
         <div class="row">
             <div class="col-md-6">
@@ -37,7 +37,7 @@
             </div>
         </div>
     </div>
-</div>
+</div> --}}
 <section id="what-we-do">
     <div class="container">
         <h2 class="section-title mb-2 h1">Our Products</h2>

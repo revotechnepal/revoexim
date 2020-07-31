@@ -6,16 +6,16 @@
           <div class="col-md-3 col-sm-12">
             <div class="footer-widget">
               <div class="widget-about">
-                <img src="http://placehold.it/250x80" alt="" class="img-fluid">
-                <p>Что если тут написать другой текст на русском языке, для проверки шрифта Rubik )</p>
+                {{-- <img src="{{Storage::disk('uploads')->url($settings->site_logo)}}" alt="" class="img-fluid"> --}}
+                <p>{{strip_tags(substr($settings->about,0,100))}}...</p>
                 <ul class="contact-details">
                   <li>
                     <span class="icon-earphones"></span> Call Us:
-                    <a href="tel:344-755-111">344-755-111</a>
+                    <a href="tel:+977-{{$settings->phone}}">+977-{{$settings->phone}}</a>
                   </li>
                   <li>
                     <span class="icon-envelope-open"></span>
-                    <a href="mailto:support@aazztech.com">support@aazztech.com</a>
+                    <a href="mailto:{{$settings->email}}">{{$settings->email}}</a>
                   </li>
                 </ul>
               </div>
@@ -26,23 +26,13 @@
           <div class="col-md-3 col-sm-4">
             <div class="footer-widget">
               <div class="footer-menu footer-menu--1">
-                <h4 class="footer-widget-title">Popular Category</h4>
+                <h4 class="footer-widget-title">Popular Product</h4>
                 <ul>
-                  <li>
-                    <a href="#">Wordpress</a>
-                  </li>
-                  <li>
-                    <a href="#">Plugins</a>
-                  </li>
-                  <li>
-                    <a href="#">Joomla Template</a>
-                  </li>
-                  <li>
-                    <a href="#">Admin Template</a>
-                  </li>
-                  <li>
-                    <a href="#">HTML Template</a>
-                  </li>
+                    @foreach ($popproducts as $popproduct)
+                        <li>
+                            <a href="/product/{{$popproduct->slug}}">{{$popproduct->title}}</a>
+                        </li>
+                    @endforeach
                 </ul>
               </div>
               <!-- end /.footer-menu -->
@@ -57,25 +47,16 @@
                 <h4 class="footer-widget-title">Our Company</h4>
                 <ul>
                   <li>
-                    <a href="#">About Us</a>
+                    <a href="{{route('about')}}">About Us</a>
                   </li>
                   <li>
-                    <a href="#">How It Works</a>
+                    <a href="{{route('services')}}">Services</a>
                   </li>
                   <li>
-                    <a href="#">Affiliates</a>
+                    <a href="{{route('products')}}">Products</a>
                   </li>
                   <li>
-                    <a href="#">Testimonials</a>
-                  </li>
-                  <li>
-                    <a href="#">Contact Us</a>
-                  </li>
-                  <li>
-                    <a href="#">Plan &amp; Pricing</a>
-                  </li>
-                  <li>
-                    <a href="#">Blog</a>
+                    <a href="{{route('contact')}}">Contact Us</a>
                   </li>
                 </ul>
               </div>
@@ -91,13 +72,10 @@
                 <h4 class="footer-widget-title">Help Support</h4>
                 <ul>
                   <li>
-                    <a href="#">Support Forum</a>
+                    <a href="{{route('terms')}}">Terms &amp; Conditions</a>
                   </li>
                   <li>
-                    <a href="#">Terms &amp; Conditions</a>
-                  </li>
-                  <li>
-                    <a href="#">Support Policy</a>
+                    <a href="{{route('privacypolicies')}}">Privacy Policy</a>
                   </li>
                   <li>
                     <a href="#">Refund Policy</a>

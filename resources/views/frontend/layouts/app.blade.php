@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Revo Exim</title>
+    <link rel="shortcut icon" href="{{Storage::disk('uploads')->url($settings->site_favicon)}}">
     <link rel="stylesheet" href="{{asset('frontend/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('frontend/css/custom.css')}}">
     <script src="https://kit.fontawesome.com/a45324daee.js" crossorigin="anonymous"></script>

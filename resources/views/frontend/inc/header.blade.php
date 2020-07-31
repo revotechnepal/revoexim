@@ -6,17 +6,17 @@
             <div class="row">
                 <div class="col-md-9 col-12">
                     <ul class="top-bar-info">
-                        <li><i class="fas fa-map-marker-alt"></i>Rabhibhawan-14, Kathmandu</li>
-                        <li><i class="fas fa-phone-square"></i> Phone: +977 1-4282309</li>
-                        <li><i class="fa fa-envelope"></i>Email: info@revonepal.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i>{{strip_tags($settings->address)}}</li>
+                        <li><i class="fas fa-phone-square"></i> Phone: +977 {{$settings->phone}}</li>
+                        <li><i class="fa fa-envelope"></i>Email: {{$settings->email}}</li>
                     </ul>
                 </div>
                 <div class="col-md-3 col-12">
                     <ul class="social-icons hidden-sm">
-                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                        <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
-                        <li><a href="#"><i class="fab fa-pinterest"></i></a></li>
+                        <li><a target="_blank" href="{{$settings->facebook}}"><i class="fab fa-facebook"></i></a></li>
+                        <li><a target="_blank" href="{{$settings->twitter}}"><i class="fab fa-twitter"></i></a></li>
+                        <li><a target="_blank" href="{{$settings->linkedin}}"><i class="fab fa-linkedin"></i></a></li>
+                        <li><a target="_blank" href="{{$settings->instagram}}"><i class="fab fa-instagram"></i></a></li>
                     </ul>
                 </div>
             </div>
@@ -27,8 +27,8 @@
     <nav class="navbar navbar-expand-lg navbar-light navbar-custom bg-light">
         <div class="container">
             <a class="navbar-brand" href="{{route('index')}}">
-                <!-- <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png" height="30" alt=""> -->
-                Revo Exim
+                <!-- <img src="https://mdbootstrap.com/img/logo/mdb-transparent.png"  alt=""> -->
+                <img src="{{Storage::disk('uploads')->url($settings->site_logo)}}" height="30" alt="{{$settings->site_name}}">
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent-4" aria-controls="navbarSupportedContent-4" aria-expanded="false" aria-label="Toggle navigation">
                             <span class="navbar-toggler-icon"></span>

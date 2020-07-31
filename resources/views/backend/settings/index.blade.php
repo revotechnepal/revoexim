@@ -112,7 +112,7 @@
                             <div class="box-body">
                                 <div class="aboutus">
                                     <label>About Us</label>
-                                    <textarea class="textarea summernote" name="about" paceholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{{ @$setting->about }}</textarea>
+                                    <textarea class="textarea summernote" name="about" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{{ @$setting->about }}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -120,7 +120,7 @@
                             <div class="box-body">
                                 <div class="service">
                                     <label>Service</label>
-                                    <textarea class="textarea summernote" name="service" paceholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{{ @$setting->service }}</textarea>
+                                    <textarea class="textarea summernote" name="service" placeholder="Place some text here" style="width: 100%; height: 200px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{{ @$setting->service }}</textarea>
                                 </div>
                             </div>
                         </div>
@@ -129,7 +129,7 @@
                             <div class="box-body">
                                 <div class="address">
                                     <label>Address</label>
-                                    <textarea class="textarea" name="address" value="Place some text here" style="width: 100%; height: 150px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{{ @$setting->address }}</textarea>
+                                    <textarea class="textarea summernote" name="address" value="Place some text here" style="width: 100%; height: 150px; font-size: 14px; line-height: 18px; border: 1px solid #dddddd; padding: 10px;">{{ @$setting->address }}</textarea>
                                 </div>
                             </div>
                         </div>
